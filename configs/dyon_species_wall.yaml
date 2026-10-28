@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "model": "global0d_dyon_like_surrogate",
+  "geometry": {
+    "R0_m": 0.50,
+    "minor_radius_m": 0.25,
+    "connection_length_m": 5.0,
+    "B_t_T": 0.50,
+    "B_vertical_T": 0.015,
+    "B_penetration_T": 0.010
+  },
+  "gas": {
+    "species": "D2",
+    "pressure_Pa": 0.05,
+    "Tn_K": 300.0,
+    "recycling_coefficient": 0.90
+  },
+  "initial": {
+    "ne_m3": 1.0e14,
+    "ni_m3": 1.0e14,
+    "Te_eV": 0.20,
+    "Ti_eV": 0.03
+  },
+  "rf": {
+    "enabled": true,
+    "frequency_Hz": 2.45e9,
+    "power_W": 5000.0,
+    "absorption_fraction": 0.70,
+    "pulse": {
+      "start_s": 0.0,
+      "end_s": 0.001,
+      "ramp_up_s": 0.00005,
+      "ramp_down_s": 0.00005
+    }
+  },
+  "species_wall": {
+    "enabled": true,
+    "atomic_backend": "analytic_surrogate",
+    "species": [
+      {
+        "symbol": "D",
+        "role": "fuel",
+        "atomic_number": 1,
+        "max_charge": 1,
+        "radiation_coefficient_W_m3": 1.0e-32
+      },
+      {
+        "symbol": "C",
+        "role": "impurity",
+        "atomic_number": 6,
+        "max_charge": 3,
+        "initial_charge_densities_m3": [1.0e14, 0.0, 0.0, 0.0],
+        "ionization_energies_eV": [11.26, 24.38, 47.89],
+        "ionization_rate_scale_m3_s": 2.0e-14,
+        "recombination_rate_scale_m3_s": 1.0e-13,
+        "radiation_coefficient_W_m3": 1.0e-31,
+        "wall_loss_multiplier": 1.0,
+        "neutral_pump_time_s": 0.2
+      }
+    ],
+    "wall_materials": [
+      {
+        "name": "retained_fuel",
+        "species": "D",
+        "initial_inventory_m2": 1.0e17,
+        "recycling_coefficient": 0.80,
+        "desorption_time_s": 0.10
+      },
+      {
+        "name": "carbon_surface",
+        "species": "C",
+        "initial_inventory_m2": 0.0,
+        "recycling_coefficient": 0.20,
+        "physical_sputtering_yield": 0.02,
+        "physical_sputtering_threshold_eV": 20.0,
+        "chemical_sputtering_yield": 0.01,
+        "incident_energy_factor": 3.0
+      }
+    ]
+  },
+  "charge_closure": {
+    "mode": "ambipolar",
+    "initialize_ne_from_ions": true,
+    "potential_min_over_Te": -10.0,
+    "potential_max_over_Te": 30.0,
+    "flux_floor_m3_s": 1.0
+  },
+  "numerics": {
+    "t_end_s": 0.001,
+    "dt_s": 0.000001,
+    "solver": "BDF",
+    "rtol": 1.0e-5,
+    "atol": 1.0e-8
+  },
+  "outputs": {
+    "directory": "runs/dyon_species_wall",
+    "cadence_s": 0.00001,
+    "write_netcdf": true,
+    "write_csv": true
+  }
+}

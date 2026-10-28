@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "device": "EXL-50U",
+  "geometry_status": "schematic_only",
+  "R0_m": 0.861005783,
+  "minor_radius_m": 0.4458654593538706,
+  "R_bounds_m": [0.200000003, 2.200000003],
+  "Z_bounds_m": [-1.899999975, 1.899999975],
+  "wall_polygon_RZ_m": [],
+  "toroidal_field_channel": "BT",
+  "source_notes": [
+    "R0 and computational bounds are device-scale references from shot 16747 closed equilibria; they are not a 0-100 ms magnetic reconstruction.",
+    "The supplied screenshots establish PF1-PF10 names and relative placement only; they contain no metric scale, turns, conductor cross-section or polarity.",
+    "TPC and VFC are field configurations made by coil-current combinations, not additional coil channels in the supplied CSV files.",
+    "Set geometry_status to metric_confirmed only after engineering coordinates, turns, polarity and a measured first-wall polygon are entered."
+  ],
+  "coils": [
+    {"name": "PF1", "channel": "I_PF1", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "upper inner / central-column side", "source": "user screenshot 1"},
+    {"name": "PF2", "channel": "I_PF2", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "lower inner / central-column side", "source": "user screenshot 1"},
+    {"name": "PF3", "channel": "I_PF3", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "upper inboard", "source": "user screenshot 1"},
+    {"name": "PF4", "channel": "I_PF4", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "lower inboard", "source": "user screenshot 1"},
+    {"name": "PF5", "channel": "I_PF5", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "upper outer crown", "source": "user screenshot 1"},
+    {"name": "PF6", "channel": "I_PF6", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "lower outer crown", "source": "user screenshot 1"},
+    {"name": "PF7", "channel": "I_PF7", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "upper outboard", "source": "user screenshots 1-2"},
+    {"name": "PF8", "channel": "I_PF8", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "lower outboard", "source": "user screenshots 1-2"},
+    {"name": "PF9", "channel": "I_PF9", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "outboard upper-midplane", "source": "user screenshots 1-2"},
+    {"name": "PF10", "channel": "I_PF10", "role": "PF", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "outboard lower-midplane", "source": "user screenshots 1-2"},
+    {"name": "CS", "channel": "I_CS", "role": "CS", "center_R_m": null, "center_Z_m": null, "turns": null, "polarity": null, "cross_section_width_m": null, "cross_section_height_m": null, "relative_location": "central solenoid; must be discretized into its actual axial sections", "source": "CSV channel plus user device drawing"}
+  ],
+  "configuration_groups": {
+    "TPC": {"status": "unknown", "required": "shot-specific PF current combination and polarity definition"},
+    "VFC": {"status": "unknown", "required": "shot-specific PF current combination and polarity definition"}
+  }
+}

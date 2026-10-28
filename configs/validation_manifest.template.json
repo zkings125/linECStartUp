@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "device": "replace_me",
+  "frozen_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "label_authority": "replace with reviewed experiment-log source",
+  "fit_shots": [
+    {
+      "shot_id": "fit_success_id",
+      "label": "success",
+      "data_file": "relative/path/to/shot.csv",
+      "sha256": "replace_with_64_lowercase_hex_characters",
+      "channels": ["Ip", "ne", "Halpha", "HXR", "loop_voltage"]
+    },
+    {
+      "shot_id": "fit_failure_id",
+      "label": "failure",
+      "data_file": "relative/path/to/shot.csv",
+      "sha256": "replace_with_64_lowercase_hex_characters",
+      "channels": ["Ip", "ne", "Dalpha", "ECE", "loop_voltage"]
+    }
+  ],
+  "validation_shots": [
+    {
+      "shot_id": "blind_success_id",
+      "label": "success",
+      "data_file": "relative/path/to/shot.csv",
+      "sha256": "replace_with_64_lowercase_hex_characters",
+      "channels": ["Ip", "ne", "Halpha", "HXR", "loop_voltage"]
+    },
+    {
+      "shot_id": "blind_failure_id",
+      "label": "failure",
+      "data_file": "relative/path/to/shot.csv",
+      "sha256": "replace_with_64_lowercase_hex_characters",
+      "channels": ["Ip", "ne", "Dalpha", "ECE", "loop_voltage"]
+    }
+  ]
+}

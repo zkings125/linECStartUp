@@ -1,0 +1,5 @@
+{
+  "gas.pressure_Pa": {"low": 0.03, "high": 0.20, "log": true},
+  "geometry.B_vertical_T": {"low": 0.005, "high": 0.025, "log": false},
+  "rf.power_W": {"low": 3000.0, "high": 20000.0, "log": true}
+}

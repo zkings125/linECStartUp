@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "device": "EXL-50U",
+  "note": "Replace provisional/unknown entries with archive metadata before quantitative validation.",
+  "channels": {
+    "ip": {"raw_unit": "kA", "physical_unit": "A", "scale_to_physical": 1000.0, "offset_to_physical": 0.0, "status": "provisional", "note": "Inferred from waveform magnitude; confirm against IP archive metadata."},
+    "HCN_NE001": {"raw_unit": "1e19 m^-3", "physical_unit": "m^-3", "scale_to_physical": 1e19, "offset_to_physical": 0.0, "status": "provisional", "note": "Confirm interferometer line-integral/average convention and zero subtraction."},
+    "HA001": {"raw_unit": "a.u.", "physical_unit": null, "scale_to_physical": null, "status": "relative_only", "note": "Use for timing and normalized amplitude until optical calibration is supplied."},
+    "I_PF1": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF2": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF3": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF4": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF5": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF6": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF7": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF8": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF9": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_PF10": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "I_CS": {"raw_unit": "A", "physical_unit": "A", "scale_to_physical": 1.0, "status": "provisional"},
+    "LOOPV": {"raw_unit": "V", "physical_unit": "V", "scale_to_physical": 1.0, "status": "provisional"},
+    "ITF01": {"raw_unit": "archive unit", "physical_unit": null, "scale_to_physical": null, "status": "unknown", "note": "Supply TF-current calibration; BT is preferred meanwhile."},
+    "GAS_PRES01": {"raw_unit": "archive unit", "physical_unit": null, "scale_to_physical": null, "status": "unknown", "note": "Supply gauge type, location, gas correction and conversion to Pa."},
+    "GAS_OUT01": {"raw_unit": "a.u.", "physical_unit": null, "scale_to_physical": null, "status": "relative_only"},
+    "BT": {"raw_unit": "T", "physical_unit": "T", "scale_to_physical": 1.0, "status": "provisional"},
+    "HXR001": {"raw_unit": "a.u.", "physical_unit": null, "scale_to_physical": null, "status": "relative_only"}
+  }
+}

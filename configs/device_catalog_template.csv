@@ -1,0 +1,6 @@
+device_name,R0_m,minor_radius_m,B_t_T,B_vertical_T,connection_length_m,rf_frequency_Hz,rf_power_W,gas_pressure_Pa,wall_model,source_doi,notes
+SUNIST,,,,,,,,,,10.1088/0029-5515/51/6/063021,请用装置论文/实验记录补全并注明时间波形
+LATE,,,,,,,,,,10.1088/0029-5515/45/11/026,请用装置论文/实验记录补全并注明平衡阶段
+MAST,,,,,,,,,,10.1088/0029-5515/50/2/022004,请区分EBW启动与后续闭合面阶段
+EXL-50,,,,,,,,,,10.1088/1361-6587/ac70fb,请补全限制器/壁几何和j_TPC/j_VTF诊断
+QUEST,,,,,,,,,,10.1088/1741-4326/ad6914,请补全反向环向场波形和HXR时序

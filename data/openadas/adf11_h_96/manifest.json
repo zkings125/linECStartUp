@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "database": "OpenADAS",
+  "dataset": "ADF11 hydrogen 1996",
+  "retrieved_date": "2026-10-26",
+  "citation": "H. P. Summers et al., ADAS atomic data and analysis structure, hydrogen ADF11 1996 files.",
+  "source_root": "https://open.adas.ac.uk/download/adf11",
+  "license_note": "Not redistributed. OPEN-ADAS terms restrict downloaded files to personal use and prohibit redistribution with modelling code without prior written permission. Download each URL directly for authorized local use.",
+  "files": {
+    "scd": {
+      "file": "scd96_h.dat",
+      "url": "https://open.adas.ac.uk/download/adf11/scd96/scd96_h.dat",
+      "sha256": "cc82dd3298794a9758e967120b736d9c58a4a9ebce9c8b93c6f1be0646a6fe0b",
+      "quantity": "effective ionization coefficient",
+      "cgs_unit": "cm^3 s^-1"
+    },
+    "acd": {
+      "file": "acd96_h.dat",
+      "url": "https://open.adas.ac.uk/download/adf11/acd96/acd96_h.dat",
+      "sha256": "d59588ffbc97e1c12b94d5fefd73657fe6065e037b10184d85c445e00a4e9c5f",
+      "quantity": "effective recombination coefficient",
+      "cgs_unit": "cm^3 s^-1"
+    },
+    "plt": {
+      "file": "plt96_h.dat",
+      "url": "https://open.adas.ac.uk/download/adf11/plt96/plt96_h.dat",
+      "sha256": "67526833ac89e3fe7cf04f0c6f6388276429b2d9f56d65ceb5c84b2ebebb4e5b",
+      "quantity": "line radiation power coefficient",
+      "cgs_unit": "W cm^3"
+    },
+    "prb": {
+      "file": "prb96_h.dat",
+      "url": "https://open.adas.ac.uk/download/adf11/prb96/prb96_h.dat",
+      "sha256": "8f04784e4d9d6d76b8e1baa71f7832f920588e32d73ccc2b6df979bc183324bf",
+      "quantity": "recombination and bremsstrahlung power coefficient",
+      "cgs_unit": "W cm^3"
+    }
+  }
+}

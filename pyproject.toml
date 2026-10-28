@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecstartup"
+version = "0.1.0"
+description = "分层、可验证的托卡马克击穿—预电离—CFS前启动阶段模型"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+keywords = [
+  "tokamak",
+  "electron-cyclotron",
+  "plasma-startup",
+  "fokker-planck",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "pydantic>=2.0",
+  "PyYAML>=6.0",
+  "xarray>=2023.1",
+  "matplotlib>=3.6",
+  "scikit-fem>=11.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/zkings125/linECStartUp"
+Repository = "https://github.com/zkings125/linECStartUp.git"
+Issues = "https://github.com/zkings125/linECStartUp/issues"
+
+[project.optional-dependencies]
+tools = [
+  "Pillow>=9.0",
+  "reportlab>=3.6",
+]
+dev = [
+  "build>=1.0",
+  "pytest>=7",
+  "ruff>=0.4",
+  "mypy>=1.8",
+  "Pillow>=9.0",
+  "reportlab>=3.6",
+]
+
+[project.scripts]
+ecstartup = "ecstartup.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ecstartup*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E701", "E702", "E731", "E741"]

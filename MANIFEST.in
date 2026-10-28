@@ -1,0 +1,15 @@
+include README.md
+include CONTRIBUTING.md
+include LICENSE
+include pyproject.toml
+recursive-include configs *.ini *.json *.yaml *.csv *.md
+recursive-include data *.csv *.dat *.nc *.txt *.json
+exclude data/openadas/adf11_h_96/*.dat
+recursive-include docs *.md *.bib
+recursive-include tools *.py
+prune data/genray_reference
+prune runs
+prune output
+prune tmp
+prune exl50u_startUpShots
+global-exclude __pycache__ *.py[cod]

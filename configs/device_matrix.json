@@ -1,0 +1,33 @@
+{
+  "base_config": "minimal.yaml",
+  "devices": {
+    "ST_like": {
+      "geometry": {
+        "R0_m": 0.35,
+        "minor_radius_m": 0.25,
+        "connection_length_m": 3.0,
+        "B_t_T": 0.25,
+        "B_vertical_T": 0.008,
+        "B_penetration_T": 0.006,
+        "R_bounds_m": [0.08, 0.62],
+        "Z_bounds_m": [-0.32, 0.32]
+      },
+      "rf": {"frequency_Hz": 2.45e9, "power_W": 5000.0},
+      "circuit": {"loop_voltage_V": 3.0}
+    },
+    "conventional_like": {
+      "geometry": {
+        "R0_m": 1.20,
+        "minor_radius_m": 0.40,
+        "connection_length_m": 12.0,
+        "B_t_T": 1.50,
+        "B_vertical_T": 0.040,
+        "B_penetration_T": 0.030,
+        "R_bounds_m": [0.70, 1.70],
+        "Z_bounds_m": [-0.50, 0.50]
+      },
+      "rf": {"frequency_Hz": 28.0e9, "power_W": 20000.0},
+      "circuit": {"loop_voltage_V": 10.0}
+    }
+  }
+}

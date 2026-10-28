@@ -1,0 +1,54 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated simulations, reports, and scratch files
+runs/
+output/
+tmp/
+*.log
+.tmp_*
+
+# Shot-resolved experimental data are not source code. Publish a manifest and
+# acquisition instructions instead, or use an explicit data release/LFS store.
+exl50u_startUpShots/
+
+# Large local media and binary references
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Keep versioned atomic-data snapshots under data/; do not ignore data/.
+
+# The public GENRAY repository used for the regression fixture has no clear
+# SPDX license. Keep local reference outputs out of a new Git history until
+# redistribution permission is confirmed; retain only the acquisition note.
+data/genray_reference/ec_iter_central_cd/*
+!data/genray_reference/ec_iter_central_cd/README.md
+
+# OPEN-ADAS permits personal use but forbids redistribution with modelling
+# code without prior written permission. Keep only provenance/acquisition
+# metadata in Git; users download the checksummed ADF11 files themselves.
+data/openadas/adf11_h_96/*.dat
+!data/openadas/adf11_h_96/README.md
+!data/openadas/adf11_h_96/manifest.json

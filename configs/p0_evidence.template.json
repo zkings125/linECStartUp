@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "device": "replace_me",
+  "shot_id": "replace_me",
+  "artifacts": {
+    "shot_coil_waveforms": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "mutual_inductance": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "eddy_structure": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "first_wall": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "orbit_loss_validation": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "molecular_reaction_database": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "material_recycling_database": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "material_sputtering_database": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "nonlocal_hot_dielectric": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "mode_decomposition": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "fullwave_power_momentum_closure": {"path": "replace", "sha256": "replace", "status": "verified"},
+    "frozen_validation_manifest": {"path": "validation_manifest.json", "sha256": "replace", "status": "verified"}
+  }
+}

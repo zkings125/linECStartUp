@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "model": "global0d_surrogate",
+  "geometry": {
+    "field_configuration": "circular",
+    "B_t_T": 0.5,
+    "B_vertical_T": 0.015,
+    "coil_components": [
+      {
+        "name": "TPC_PF_surrogate",
+        "role": "TPC",
+        "current_waveform_A": [[0.0, 0.0], [0.0005, 120000.0]],
+        "B_R_T_per_A": 2.0e-8,
+        "B_Z_T_per_A": 0.0,
+        "B_phi_T_per_A": 1.0e-9
+      },
+      {
+        "name": "VFC_PF_surrogate",
+        "role": "VFC",
+        "current_waveform_A": [[0.0, 0.0], [0.0005, 50000.0]],
+        "B_R_T_per_A": 0.0,
+        "B_Z_T_per_A": 1.0e-7,
+        "B_phi_T_per_A": 0.0
+      }
+    ]
+  },
+  "numerics": {
+    "t_end_s": 0.00002,
+    "dt_s": 0.000002,
+    "solver": "BDF"
+  },
+  "outputs": {
+    "directory": "runs/coil_superposition",
+    "write_netcdf": true,
+    "write_csv": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "model": "aspect_ratio_mechanism_sensitivity",
+  "geometry": {
+    "R0_m": 0.50,
+    "minor_radius_m": 0.25,
+    "B_t_T": 0.83,
+    "R_bounds_m": [0.15, 0.85],
+    "Z_bounds_m": [-0.35, 0.35]
+  },
+  "gas": {
+    "pressure_Pa": 0.004
+  },
+  "rf": {
+    "enabled": true,
+    "frequency_Hz": 50000000000.0,
+    "harmonic": 1,
+    "power_W": 250000.0,
+    "absorption_fraction": 0.70
+  },
+  "circuit": {
+    "cs_mode": "without_cs"
+  },
+  "numerics": {
+    "t_start_s": 0.0,
+    "t_end_s": 0.01,
+    "dt_s": 0.001
+  },
+  "outputs": {
+    "directory": "runs/aspect_ratio_example",
+    "write_netcdf": false,
+    "write_csv": false,
+    "write_pdf_report": false
+  },
+  "aspect_ratio_scan": {
+    "enabled": true,
+    "R0_values_m": [0.45, 0.80],
+    "minor_radius_values_m": [0.20, 0.30],
+    "combination": "cartesian",
+    "scale_rf_launch_with_geometry": true
+  },
+  "validation": {
+    "intended_use": "diagnostic_only",
+    "device_name": "generic aspect-ratio scan"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "base_config": "minimal.yaml",
+  "devices": {
+    "TPC_field_only": {
+      "geometry": {
+        "field_configuration": "TPC",
+        "field_configuration_scale": 1.0,
+        "tpc_mirror_ratio": 2.2,
+        "tpc_trapped_fraction": 0.35,
+        "tpc_decay_index": 1.2,
+        "B_vertical_T": 0.015,
+        "B_penetration_T": 0.010
+      }
+    },
+    "VFC_field_only": {
+      "geometry": {
+        "field_configuration": "VFC",
+        "field_configuration_scale": 1.0,
+        "vfc_decay_index": 0.8,
+        "vfc_connection_length_factor": 1.0,
+        "vfc_current_fraction": 0.0,
+        "B_vertical_T": 0.015,
+        "B_penetration_T": 0.010
+      }
+    },
+    "VFC_plus_charge_separation": {
+      "geometry": {
+        "field_configuration": "VFC",
+        "field_configuration_scale": 1.0,
+        "vfc_decay_index": 0.8,
+        "vfc_connection_length_factor": 1.0,
+        "vfc_current_fraction": 0.10,
+        "B_vertical_T": 0.015,
+        "B_penetration_T": 0.010
+      }
+    },
+    "circular_baseline": {
+      "geometry": {
+        "field_configuration": "circular",
+        "vfc_current_fraction": 0.0
+      }
+    }
+  }
+}

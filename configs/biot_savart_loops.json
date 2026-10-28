@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "model": "global0d_surrogate",
+  "geometry": {
+    "field_configuration": "circular",
+    "magnetic_backend": "biot_savart",
+    "B_t_T": 0.5,
+    "B_vertical_T": 0.0,
+    "R0_m": 0.5,
+    "minor_radius_m": 0.25,
+    "R_bounds_m": [0.15, 0.85],
+    "Z_bounds_m": [-0.4, 0.4],
+    "biot_savart_loops": [
+      {
+        "name": "PF_upper",
+        "radius_m": 0.42,
+        "z0_m": 0.18,
+        "turns": 8,
+        "current_waveform_A": [[0.0, 0.0], [0.0005, 120000.0]]
+      },
+      {
+        "name": "PF_lower",
+        "radius_m": 0.42,
+        "z0_m": -0.18,
+        "turns": 8,
+        "current_waveform_A": [[0.0, 0.0], [0.0005, 120000.0]]
+      }
+    ]
+  },
+  "numerics": {
+    "t_end_s": 0.00002,
+    "dt_s": 0.000002,
+    "solver": "BDF"
+  },
+  "outputs": {
+    "directory": "runs/biot_savart_loops",
+    "write_netcdf": true,
+    "write_csv": true
+  }
+}

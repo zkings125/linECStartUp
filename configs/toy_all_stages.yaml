@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "model": "global0d_surrogate",
+  "geometry": {
+    "R0_m": 0.50,
+    "minor_radius_m": 0.25,
+    "connection_length_m": 8.0,
+    "B_t_T": 0.30,
+    "B_vertical_T": 0.005,
+    "B_penetration_T": 0.005,
+    "closed_confinement_gain": 20.0,
+    "R_bounds_m": [0.20, 0.80],
+    "Z_bounds_m": [-0.35, 0.35]
+  },
+  "gas": {
+    "species": "D2",
+    "pressure_Pa": 0.20,
+    "Tn_K": 300.0,
+    "recombination_coeff_m3_s": 1.0e-14,
+    "attachment_coeff_m3_s": 0.0,
+    "recycling_coefficient": 0.95,
+    "pump_time_s": 0.50,
+    "secondary_emission": 0.10
+  },
+  "initial": {
+    "ne_m3": 1.0e16,
+    "ni_m3": 1.0e16,
+    "Te_eV": 2.5,
+    "Ti_eV": 0.05,
+    "Ip_A": 0.0,
+    "seed_rate_m3_s": 1.0e19
+  },
+  "rf": {
+    "enabled": true,
+    "frequency_Hz": 2.45e9,
+    "power_W": 50000.0,
+    "absorption_fraction": 0.80,
+    "pulse": {"start_s": 0.0, "end_s": 0.003, "ramp_up_s": 0.00002, "ramp_down_s": 0.0001},
+    "hot_fraction": 0.30,
+    "hot_creation_energy_eV": 50.0,
+    "hot_loss_time_s": 0.001,
+    "hot_scattering_time_s": 0.002,
+    "orbit_asymmetry": 0.20,
+    "current_drive_A_per_W": 0.50,
+    "current_drive_sign": 1.0,
+    "launch": {"R_m": 0.30, "Z_m": 0.0, "k_parallel_m_inv": 2.0, "mode": "EBW", "polarization": "X"}
+  },
+  "circuit": {
+    "loop_voltage_V": 80.0,
+    "loop_voltage_ramp_s": 0.0001,
+    "total_inductance_H": 2.0e-6,
+    "conductivity_floor_S_m": 1.0e-8,
+    "resistance_cap_ohm": 1000000.0
+  },
+  "thresholds": {
+    "breakdown_density_m3": 1.0e16,
+    "preionization_density_m3": 1.0e17,
+    "preionization_Te_eV": 1.5,
+    "cfs_closed_fraction": 0.05,
+    "persistence_steps": 3,
+    "failure_density_m3": 1.0e10
+  },
+  "numerics": {
+    "t_end_s": 0.003,
+    "dt_s": 0.000002,
+    "solver": "BDF",
+    "rtol": 0.00001,
+    "atol": 1.0e-8
+  },
+  "outputs": {
+    "directory": "runs/toy_all_stages",
+    "cadence_s": 0.00002,
+    "write_netcdf": true,
+    "write_csv": true
+  },
+  "seed": 0
+}
