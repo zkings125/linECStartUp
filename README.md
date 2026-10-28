@@ -59,6 +59,13 @@ The solver successfully reached the end of the integration interval.
 `configs/minimal.yaml` 是快速软件冒烟案例，不代表任何真实装置。包含报告生成脚本、
 视频图像工具时安装 `.[tools]`；开发和测试直接安装 `.[dev]`。
 
+## 公开样例与参考输出
+
+[`examples/`](examples/) 提供四组可复现案例及对应的小型JSON结果：最小0D运行、
+合成0D-2V F-P、pre-CFS O-X-B候选诊断，以及TPC/VFC线圈叠加场线扫描。每组都给出
+完整命令、输入配置链接、结果解释和可信度限制。参考结果用于软件回归和接口理解，
+不能替代炮级输入、实验验证或定量模式转换证据。
+
 ## 第一次看结果
 
 `runs/quickstart/` 中最重要的文件是：

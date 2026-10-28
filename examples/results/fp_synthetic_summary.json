@@ -1,0 +1,1471 @@
+{
+  "backend": "reduced_0d2v",
+  "time_s": 1.999999999999991e-06,
+  "steps": 200,
+  "velocity_grid": {
+    "coordinate_system": "velocity",
+    "n_parallel": 61,
+    "n_perp": 36,
+    "v_parallel_min_m_s": -11803278.68852459,
+    "v_parallel_max_m_s": 11803278.688524589,
+    "v_perp_min_m_s": 166666.66666666666,
+    "v_perp_max_m_s": 11833333.333333332
+  },
+  "cross_section_area_m2": 0.19634954084936207,
+  "initial_moments": {
+    "density_m3": 1e+17,
+    "mean_v_parallel_m_s": 0.0,
+    "energy_density_J_m3": 0.48022946350181567,
+    "temperature_eV": 19.98237702846671,
+    "current_density_parallel_A_m2": -0.0,
+    "current_parallel_A": -0.0,
+    "pressure_parallel_Pa": 0.3204353248297226,
+    "pressure_perp_Pa": 0.3200118010869544
+  },
+  "final_moments": {
+    "density_m3": 9.999999999999933e+16,
+    "mean_v_parallel_m_s": 493609.12824233755,
+    "energy_density_J_m3": 0.5858832245407232,
+    "temperature_eV": 23.916868546100787,
+    "current_density_parallel_A_m2": -7908.490115989774,
+    "current_parallel_A": -1552.8284030863101,
+    "pressure_parallel_Pa": 0.5095478361164544,
+    "pressure_perp_Pa": 0.3200118010869523
+  },
+  "max_abs_particle_balance_relative": 3.2000000000000195e-16,
+  "max_linear_residual_relative": 3.3090865111822215e-16,
+  "minimum_f": 5.4769579005777845e-21,
+  "rf_diffusion_source": "synthetic_gaussian_resonance;power_scale=1",
+  "rf_diffusion_reference_power_W": null,
+  "applied_absorbed_power_W": null,
+  "rf_diffusion_diagnostics": [],
+  "dql_assessment": {
+    "source_model": "synthetic_gaussian",
+    "availability": "generated",
+    "generator": "linEC_synthetic_gaussian",
+    "coordinate_basis": "velocity_only",
+    "requires_closed_flux_surfaces": false,
+    "pre_cfs_compatible": true,
+    "power_normalized": false,
+    "wave_branch": "surrogate",
+    "mode_conversion_status": "not_evaluated",
+    "evidence_level": "sensitivity_only",
+    "quantitative_eligible": false,
+    "reason": "a Gaussian velocity-space shape has no spatial wave or mode-conversion evidence",
+    "required_next_inputs": [
+      "laboratory-coordinate wave fields",
+      "absorbed-power normalization"
+    ],
+    "source_file": null
+  },
+  "history_stride_steps": 1,
+  "history": [
+    {
+      "step": 1,
+      "time_s": 9.999999999999956e-09,
+      "current_parallel_A": -18.996135957531497,
+      "temperature_eV": 20.04333623566233,
+      "particle_balance_relative": -1.6e-16
+    },
+    {
+      "step": 2,
+      "time_s": 1.999999999999991e-08,
+      "current_parallel_A": -37.49186083053583,
+      "temperature_eV": 20.10259977960664,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 3,
+      "time_s": 2.9999999999999865e-08,
+      "current_parallel_A": -55.52350030795486,
+      "temperature_eV": 20.160274112473513,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 4,
+      "time_s": 3.999999999999982e-08,
+      "current_parallel_A": -73.1227833510261,
+      "temperature_eV": 20.216454222366398,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 5,
+      "time_s": 4.999999999999978e-08,
+      "current_parallel_A": -90.3176777586771,
+      "temperature_eV": 20.271225392963213,
+      "particle_balance_relative": -1.6000000000000004e-16
+    },
+    {
+      "step": 6,
+      "time_s": 5.999999999999973e-08,
+      "current_parallel_A": -107.13303085670935,
+      "temperature_eV": 20.324664617749924,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 7,
+      "time_s": 6.999999999999969e-08,
+      "current_parallel_A": -123.59106961643545,
+      "temperature_eV": 20.376841749581843,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 8,
+      "time_s": 7.999999999999964e-08,
+      "current_parallel_A": -139.71179723206816,
+      "temperature_eV": 20.42782044491054,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 9,
+      "time_s": 8.99999999999996e-08,
+      "current_parallel_A": -155.51331199761995,
+      "temperature_eV": 20.47765894682243,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 10,
+      "time_s": 9.999999999999956e-08,
+      "current_parallel_A": -171.0120668964108,
+      "temperature_eV": 20.526410740135102,
+      "particle_balance_relative": 1.6000000000000006e-16
+    },
+    {
+      "step": 11,
+      "time_s": 1.0999999999999952e-07,
+      "current_parallel_A": -186.22308327289693,
+      "temperature_eV": 20.57412510388673,
+      "particle_balance_relative": -1.6000000000000004e-16
+    },
+    {
+      "step": 12,
+      "time_s": 1.1999999999999946e-07,
+      "current_parallel_A": -201.16012846113978,
+      "temperature_eV": 20.62084758074419,
+      "particle_balance_relative": -1.6000000000000006e-16
+    },
+    {
+      "step": 13,
+      "time_s": 1.2999999999999942e-07,
+      "current_parallel_A": -215.83586477588614,
+      "temperature_eV": 20.666620378539495,
+      "particle_balance_relative": 1.6000000000000009e-16
+    },
+    {
+      "step": 14,
+      "time_s": 1.3999999999999937e-07,
+      "current_parallel_A": -230.26197549918825,
+      "temperature_eV": 20.7114827159009,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 15,
+      "time_s": 1.4999999999999933e-07,
+      "current_parallel_A": -244.44927220185036,
+      "temperature_eV": 20.755471121482188,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 16,
+      "time_s": 1.599999999999993e-07,
+      "current_parallel_A": -258.4077867816049,
+      "temperature_eV": 20.798619694403573,
+      "particle_balance_relative": -3.200000000000001e-16
+    },
+    {
+      "step": 17,
+      "time_s": 1.6999999999999925e-07,
+      "current_parallel_A": -272.14685088203805,
+      "temperature_eV": 20.840960332054166,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 18,
+      "time_s": 1.799999999999992e-07,
+      "current_parallel_A": -285.67516481148374,
+      "temperature_eV": 20.8825229302613,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 19,
+      "time_s": 1.8999999999999916e-07,
+      "current_parallel_A": -299.0008576630661,
+      "temperature_eV": 20.923335559930365,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 20,
+      "time_s": 1.9999999999999912e-07,
+      "current_parallel_A": -312.13154001298375,
+      "temperature_eV": 20.963424623541627,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 21,
+      "time_s": 2.0999999999999907e-07,
+      "current_parallel_A": -325.0743503204487,
+      "temperature_eV": 21.00281499431719,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 22,
+      "time_s": 2.1999999999999903e-07,
+      "current_parallel_A": -337.8359959524513,
+      "temperature_eV": 21.041530140407875,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 23,
+      "time_s": 2.29999999999999e-07,
+      "current_parallel_A": -350.42278959701457,
+      "temperature_eV": 21.079592236074845,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 24,
+      "time_s": 2.399999999999989e-07,
+      "current_parallel_A": -362.8406817006965,
+      "temperature_eV": 21.117022261533396,
+      "particle_balance_relative": -3.200000000000002e-16
+    },
+    {
+      "step": 25,
+      "time_s": 2.499999999999989e-07,
+      "current_parallel_A": -375.09528946272144,
+      "temperature_eV": 21.153840092874372,
+      "particle_balance_relative": 1.6000000000000016e-16
+    },
+    {
+      "step": 26,
+      "time_s": 2.5999999999999883e-07,
+      "current_parallel_A": -387.19192283395176,
+      "temperature_eV": 21.19006458327027,
+      "particle_balance_relative": -1.6000000000000013e-16
+    },
+    {
+      "step": 27,
+      "time_s": 2.699999999999988e-07,
+      "current_parallel_A": -399.1356079001022,
+      "temperature_eV": 21.22571363649967,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 28,
+      "time_s": 2.7999999999999875e-07,
+      "current_parallel_A": -410.93110797181,
+      "temperature_eV": 21.26080427367903,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 29,
+      "time_s": 2.899999999999987e-07,
+      "current_parallel_A": -422.5829426572258,
+      "temperature_eV": 21.295352693969594,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 30,
+      "time_s": 2.9999999999999866e-07,
+      "current_parallel_A": -434.0954051536042,
+      "temperature_eV": 21.329374329924356,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 31,
+      "time_s": 3.099999999999986e-07,
+      "current_parallel_A": -445.47257796167276,
+      "temperature_eV": 21.362883898053965,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 32,
+      "time_s": 3.199999999999986e-07,
+      "current_parallel_A": -456.71834719898374,
+      "temperature_eV": 21.39589544511596,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 33,
+      "time_s": 3.2999999999999853e-07,
+      "current_parallel_A": -467.8364156651795,
+      "temperature_eV": 21.428422390569626,
+      "particle_balance_relative": -1.6000000000000016e-16
+    },
+    {
+      "step": 34,
+      "time_s": 3.399999999999985e-07,
+      "current_parallel_A": -478.8303147924255,
+      "temperature_eV": 21.46047756558408,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 35,
+      "time_s": 3.4999999999999845e-07,
+      "current_parallel_A": -489.7034155973829,
+      "temperature_eV": 21.492073248941566,
+      "particle_balance_relative": -1.6000000000000018e-16
+    },
+    {
+      "step": 36,
+      "time_s": 3.599999999999984e-07,
+      "current_parallel_A": -500.4589387367922,
+      "temperature_eV": 21.523221200137304,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 37,
+      "time_s": 3.6999999999999836e-07,
+      "current_parallel_A": -511.09996375638144,
+      "temperature_eV": 21.55393268994317,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 38,
+      "time_s": 3.799999999999983e-07,
+      "current_parallel_A": -521.6294376121914,
+      "temperature_eV": 21.584218528672125,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 39,
+      "time_s": 3.899999999999983e-07,
+      "current_parallel_A": -532.050182534269,
+      "temperature_eV": 21.614089092354313,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 40,
+      "time_s": 3.9999999999999823e-07,
+      "current_parallel_A": -542.3649032947208,
+      "temperature_eV": 21.64355434701287,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 41,
+      "time_s": 4.099999999999982e-07,
+      "current_parallel_A": -552.5761939351945,
+      "temperature_eV": 21.67262387120754,
+      "particle_balance_relative": -1.600000000000002e-16
+    },
+    {
+      "step": 42,
+      "time_s": 4.1999999999999815e-07,
+      "current_parallel_A": -562.6865440028874,
+      "temperature_eV": 21.701306876996483,
+      "particle_balance_relative": 1.6000000000000023e-16
+    },
+    {
+      "step": 43,
+      "time_s": 4.299999999999981e-07,
+      "current_parallel_A": -572.6983443388525,
+      "temperature_eV": 21.729612229451753,
+      "particle_balance_relative": -1.600000000000002e-16
+    },
+    {
+      "step": 44,
+      "time_s": 4.3999999999999806e-07,
+      "current_parallel_A": -582.6138924578273,
+      "temperature_eV": 21.757548464849336,
+      "particle_balance_relative": -1.6000000000000023e-16
+    },
+    {
+      "step": 45,
+      "time_s": 4.49999999999998e-07,
+      "current_parallel_A": -592.4353975546968,
+      "temperature_eV": 21.785123807643814,
+      "particle_balance_relative": 1.6000000000000026e-16
+    },
+    {
+      "step": 46,
+      "time_s": 4.59999999999998e-07,
+      "current_parallel_A": -602.1649851691838,
+      "temperature_eV": 21.812346186326103,
+      "particle_balance_relative": -1.6000000000000023e-16
+    },
+    {
+      "step": 47,
+      "time_s": 4.6999999999999794e-07,
+      "current_parallel_A": -611.8047015371768,
+      "temperature_eV": 21.83922324825361,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 48,
+      "time_s": 4.799999999999978e-07,
+      "current_parallel_A": -621.3565176543212,
+      "temperature_eV": 21.86576237353387,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 49,
+      "time_s": 4.899999999999978e-07,
+      "current_parallel_A": -630.822333075036,
+      "temperature_eV": 21.891970688034956,
+      "particle_balance_relative": -1.6000000000000026e-16
+    },
+    {
+      "step": 50,
+      "time_s": 4.999999999999978e-07,
+      "current_parallel_A": -640.2039794679134,
+      "temperature_eV": 21.917855075589404,
+      "particle_balance_relative": 1.6000000000000028e-16
+    },
+    {
+      "step": 51,
+      "time_s": 5.099999999999978e-07,
+      "current_parallel_A": -649.503223946489,
+      "temperature_eV": 21.943422189452317,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 52,
+      "time_s": 5.199999999999977e-07,
+      "current_parallel_A": -658.7217721926525,
+      "temperature_eV": 21.968678463069008,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 53,
+      "time_s": 5.299999999999977e-07,
+      "current_parallel_A": -667.8612713883626,
+      "temperature_eV": 21.993630120202656,
+      "particle_balance_relative": -3.200000000000005e-16
+    },
+    {
+      "step": 54,
+      "time_s": 5.399999999999976e-07,
+      "current_parallel_A": -676.9233129699875,
+      "temperature_eV": 22.018283184468117,
+      "particle_balance_relative": 1.600000000000003e-16
+    },
+    {
+      "step": 55,
+      "time_s": 5.499999999999976e-07,
+      "current_parallel_A": -685.9094352182697,
+      "temperature_eV": 22.042643488314127,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 56,
+      "time_s": 5.599999999999975e-07,
+      "current_parallel_A": -694.8211256958487,
+      "temperature_eV": 22.06671668149258,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 57,
+      "time_s": 5.699999999999975e-07,
+      "current_parallel_A": -703.6598235432147,
+      "temperature_eV": 22.090508239050376,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 58,
+      "time_s": 5.799999999999974e-07,
+      "current_parallel_A": -712.426921643076,
+      "temperature_eV": 22.114023468876525,
+      "particle_balance_relative": -1.6000000000000028e-16
+    },
+    {
+      "step": 59,
+      "time_s": 5.899999999999974e-07,
+      "current_parallel_A": -721.1237686622753,
+      "temperature_eV": 22.137267518834395,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 60,
+      "time_s": 5.999999999999973e-07,
+      "current_parallel_A": -729.7516709796665,
+      "temperature_eV": 22.160245383506815,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 61,
+      "time_s": 6.099999999999973e-07,
+      "current_parallel_A": -738.3118945076558,
+      "temperature_eV": 22.18296191057939,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 62,
+      "time_s": 6.199999999999972e-07,
+      "current_parallel_A": -746.8056664145181,
+      "temperature_eV": 22.205421806885663,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 63,
+      "time_s": 6.299999999999973e-07,
+      "current_parallel_A": -755.2341767540445,
+      "temperature_eV": 22.22762964413564,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 64,
+      "time_s": 6.399999999999972e-07,
+      "current_parallel_A": -763.5985800085401,
+      "temperature_eV": 22.24958986434791,
+      "particle_balance_relative": -1.600000000000003e-16
+    },
+    {
+      "step": 65,
+      "time_s": 6.499999999999971e-07,
+      "current_parallel_A": -771.8999965507617,
+      "temperature_eV": 22.271306785003823,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 66,
+      "time_s": 6.599999999999971e-07,
+      "current_parallel_A": -780.1395140299404,
+      "temperature_eV": 22.292784603940927,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 67,
+      "time_s": 6.69999999999997e-07,
+      "current_parallel_A": -788.3181886866604,
+      "temperature_eV": 22.314027404001767,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 68,
+      "time_s": 6.79999999999997e-07,
+      "current_parallel_A": -796.4370466010171,
+      "temperature_eV": 22.335039157452574,
+      "particle_balance_relative": -1.6000000000000033e-16
+    },
+    {
+      "step": 69,
+      "time_s": 6.899999999999969e-07,
+      "current_parallel_A": -804.4970848781285,
+      "temperature_eV": 22.355823730185914,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 70,
+      "time_s": 6.999999999999969e-07,
+      "current_parallel_A": -812.4992727748267,
+      "temperature_eV": 22.376384885719865,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 71,
+      "time_s": 7.099999999999968e-07,
+      "current_parallel_A": -820.4445527710258,
+      "temperature_eV": 22.39672628900571,
+      "particle_balance_relative": -1.6000000000000036e-16
+    },
+    {
+      "step": 72,
+      "time_s": 7.199999999999968e-07,
+      "current_parallel_A": -828.3338415890781,
+      "temperature_eV": 22.416851510055196,
+      "particle_balance_relative": 1.6000000000000038e-16
+    },
+    {
+      "step": 73,
+      "time_s": 7.299999999999967e-07,
+      "current_parallel_A": -836.1680311641453,
+      "temperature_eV": 22.436764027397807,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 74,
+      "time_s": 7.399999999999967e-07,
+      "current_parallel_A": -843.9479895684334,
+      "temperature_eV": 22.45646723137749,
+      "particle_balance_relative": -1.6000000000000036e-16
+    },
+    {
+      "step": 75,
+      "time_s": 7.499999999999966e-07,
+      "current_parallel_A": -851.6745618919514,
+      "temperature_eV": 22.47596442729799,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 76,
+      "time_s": 7.599999999999966e-07,
+      "current_parallel_A": -859.3485710822315,
+      "temperature_eV": 22.495258838425197,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 77,
+      "time_s": 7.699999999999965e-07,
+      "current_parallel_A": -866.9708187453658,
+      "temperature_eV": 22.514353608854247,
+      "particle_balance_relative": -1.6000000000000038e-16
+    },
+    {
+      "step": 78,
+      "time_s": 7.799999999999966e-07,
+      "current_parallel_A": -874.5420859104468,
+      "temperature_eV": 22.533251806248835,
+      "particle_balance_relative": 1.600000000000004e-16
+    },
+    {
+      "step": 79,
+      "time_s": 7.899999999999965e-07,
+      "current_parallel_A": -882.0631337594962,
+      "temperature_eV": 22.55195642445963,
+      "particle_balance_relative": -1.6000000000000038e-16
+    },
+    {
+      "step": 80,
+      "time_s": 7.999999999999965e-07,
+      "current_parallel_A": -889.5347043246984,
+      "temperature_eV": 22.570470386028166,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 81,
+      "time_s": 8.099999999999964e-07,
+      "current_parallel_A": -896.9575211547503,
+      "temperature_eV": 22.588796544582266,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 82,
+      "time_s": 8.199999999999964e-07,
+      "current_parallel_A": -904.332289951952,
+      "temperature_eV": 22.606937687128827,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 83,
+      "time_s": 8.299999999999963e-07,
+      "current_parallel_A": -911.6596991815879,
+      "temperature_eV": 22.624896536249057,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 84,
+      "time_s": 8.399999999999963e-07,
+      "current_parallel_A": -918.9404206550673,
+      "temperature_eV": 22.642675752201285,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 85,
+      "time_s": 8.499999999999962e-07,
+      "current_parallel_A": -926.1751100881589,
+      "temperature_eV": 22.66027793493609,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 86,
+      "time_s": 8.599999999999962e-07,
+      "current_parallel_A": -933.3644076356271,
+      "temperature_eV": 22.67770562602813,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 87,
+      "time_s": 8.699999999999961e-07,
+      "current_parallel_A": -940.5089384034512,
+      "temperature_eV": 22.69496131052874,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 88,
+      "time_s": 8.799999999999961e-07,
+      "current_parallel_A": -947.6093129397718,
+      "temperature_eV": 22.71204741874336,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 89,
+      "time_s": 8.89999999999996e-07,
+      "current_parallel_A": -954.6661277056214,
+      "temperature_eV": 22.72896632793746,
+      "particle_balance_relative": -3.200000000000008e-16
+    },
+    {
+      "step": 90,
+      "time_s": 8.99999999999996e-07,
+      "current_parallel_A": -961.6799655264387,
+      "temperature_eV": 22.74572036397425,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 91,
+      "time_s": 9.099999999999959e-07,
+      "current_parallel_A": -968.6513960253236,
+      "temperature_eV": 22.762311802887837,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 92,
+      "time_s": 9.19999999999996e-07,
+      "current_parallel_A": -975.5809760389105,
+      "temperature_eV": 22.77874287239449,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 93,
+      "time_s": 9.299999999999959e-07,
+      "current_parallel_A": -982.4692500166909,
+      "temperature_eV": 22.79501575334525,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 94,
+      "time_s": 9.399999999999959e-07,
+      "current_parallel_A": -989.316750404603,
+      "temperature_eV": 22.81113258112252,
+      "particle_balance_relative": -1.6000000000000046e-16
+    },
+    {
+      "step": 95,
+      "time_s": 9.499999999999958e-07,
+      "current_parallel_A": -996.123998013611,
+      "temperature_eV": 22.827095446983243,
+      "particle_balance_relative": 1.6000000000000048e-16
+    },
+    {
+      "step": 96,
+      "time_s": 9.599999999999957e-07,
+      "current_parallel_A": -1002.8915023739843,
+      "temperature_eV": 22.84290639935119,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 97,
+      "time_s": 9.699999999999956e-07,
+      "current_parallel_A": -1009.619762075963,
+      "temperature_eV": 22.8585674450606,
+      "particle_balance_relative": -1.6000000000000046e-16
+    },
+    {
+      "step": 98,
+      "time_s": 9.799999999999957e-07,
+      "current_parallel_A": -1016.3092650974029,
+      "temperature_eV": 22.87408055055351,
+      "particle_balance_relative": -1.6000000000000048e-16
+    },
+    {
+      "step": 99,
+      "time_s": 9.899999999999956e-07,
+      "current_parallel_A": -1022.9604891190388,
+      "temperature_eV": 22.889447643032724,
+      "particle_balance_relative": 1.600000000000005e-16
+    },
+    {
+      "step": 100,
+      "time_s": 9.999999999999955e-07,
+      "current_parallel_A": -1029.5739018278969,
+      "temperature_eV": 22.90467061157253,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 101,
+      "time_s": 1.0099999999999954e-06,
+      "current_parallel_A": -1036.1499612094092,
+      "temperature_eV": 22.91975130818893,
+      "particle_balance_relative": -1.6000000000000048e-16
+    },
+    {
+      "step": 102,
+      "time_s": 1.0199999999999955e-06,
+      "current_parallel_A": -1042.6891158287272,
+      "temperature_eV": 22.934691548871218,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 103,
+      "time_s": 1.0299999999999954e-06,
+      "current_parallel_A": -1049.1918051017237,
+      "temperature_eV": 22.949493114576686,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 104,
+      "time_s": 1.0399999999999953e-06,
+      "current_parallel_A": -1055.658459556128,
+      "temperature_eV": 22.964157752189827,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 105,
+      "time_s": 1.0499999999999952e-06,
+      "current_parallel_A": -1062.089501083227,
+      "temperature_eV": 22.978687175447796,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 106,
+      "time_s": 1.0599999999999954e-06,
+      "current_parallel_A": -1068.4853431805518,
+      "temperature_eV": 22.993083065833428,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 107,
+      "time_s": 1.0699999999999953e-06,
+      "current_parallel_A": -1074.8463911859267,
+      "temperature_eV": 23.00734707343727,
+      "particle_balance_relative": -1.600000000000005e-16
+    },
+    {
+      "step": 108,
+      "time_s": 1.0799999999999952e-06,
+      "current_parallel_A": -1081.1730425032547,
+      "temperature_eV": 23.021480817789833,
+      "particle_balance_relative": -1.6000000000000053e-16
+    },
+    {
+      "step": 109,
+      "time_s": 1.089999999999995e-06,
+      "current_parallel_A": -1087.4656868203883,
+      "temperature_eV": 23.03548588866541,
+      "particle_balance_relative": 1.6000000000000055e-16
+    },
+    {
+      "step": 110,
+      "time_s": 1.0999999999999952e-06,
+      "current_parallel_A": -1093.7247063194247,
+      "temperature_eV": 23.049363846858608,
+      "particle_balance_relative": -1.6000000000000053e-16
+    },
+    {
+      "step": 111,
+      "time_s": 1.109999999999995e-06,
+      "current_parallel_A": -1099.9504758797316,
+      "temperature_eV": 23.063116224934635,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 112,
+      "time_s": 1.119999999999995e-06,
+      "current_parallel_A": -1106.1433632740197,
+      "temperature_eV": 23.076744527954546,
+      "particle_balance_relative": 1.6000000000000055e-16
+    },
+    {
+      "step": 113,
+      "time_s": 1.129999999999995e-06,
+      "current_parallel_A": -1112.3037293577306,
+      "temperature_eV": 23.090250234176352,
+      "particle_balance_relative": -1.6000000000000053e-16
+    },
+    {
+      "step": 114,
+      "time_s": 1.139999999999995e-06,
+      "current_parallel_A": -1118.43192825203,
+      "temperature_eV": 23.103634795733065,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 115,
+      "time_s": 1.149999999999995e-06,
+      "current_parallel_A": -1124.5283075206598,
+      "temperature_eV": 23.116899639288466,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 116,
+      "time_s": 1.1599999999999948e-06,
+      "current_parallel_A": -1130.5932083408895,
+      "temperature_eV": 23.130046166671633,
+      "particle_balance_relative": -1.6000000000000055e-16
+    },
+    {
+      "step": 117,
+      "time_s": 1.1699999999999947e-06,
+      "current_parallel_A": -1136.626965668817,
+      "temperature_eV": 23.143075755490916,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 118,
+      "time_s": 1.1799999999999948e-06,
+      "current_parallel_A": -1142.6299083992353,
+      "temperature_eV": 23.15598975972835,
+      "particle_balance_relative": -1.6000000000000058e-16
+    },
+    {
+      "step": 119,
+      "time_s": 1.1899999999999947e-06,
+      "current_parallel_A": -1148.6023595202737,
+      "temperature_eV": 23.168789510315005,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 120,
+      "time_s": 1.1999999999999947e-06,
+      "current_parallel_A": -1154.5446362630416,
+      "temperature_eV": 23.181476315688336,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 121,
+      "time_s": 1.2099999999999946e-06,
+      "current_parallel_A": -1160.4570502464308,
+      "temperature_eV": 23.194051462331867,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 122,
+      "time_s": 1.2199999999999947e-06,
+      "current_parallel_A": -1166.3399076173164,
+      "temperature_eV": 23.206516215298183,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 123,
+      "time_s": 1.2299999999999946e-06,
+      "current_parallel_A": -1172.193509186274,
+      "temperature_eV": 23.21887181871571,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 124,
+      "time_s": 1.2399999999999945e-06,
+      "current_parallel_A": -1178.0181505590324,
+      "temperature_eV": 23.231119496279895,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 125,
+      "time_s": 1.2499999999999944e-06,
+      "current_parallel_A": -1183.814122263802,
+      "temperature_eV": 23.24326045172943,
+      "particle_balance_relative": -1.600000000000006e-16
+    },
+    {
+      "step": 126,
+      "time_s": 1.2599999999999945e-06,
+      "current_parallel_A": -1189.5817098746338,
+      "temperature_eV": 23.25529586930799,
+      "particle_balance_relative": 1.6000000000000063e-16
+    },
+    {
+      "step": 127,
+      "time_s": 1.2699999999999944e-06,
+      "current_parallel_A": -1195.3211941309653,
+      "temperature_eV": 23.267226914212166,
+      "particle_balance_relative": -1.600000000000006e-16
+    },
+    {
+      "step": 128,
+      "time_s": 1.2799999999999943e-06,
+      "current_parallel_A": -1201.0328510534896,
+      "temperature_eV": 23.279054733025877,
+      "particle_balance_relative": -1.6000000000000063e-16
+    },
+    {
+      "step": 129,
+      "time_s": 1.2899999999999942e-06,
+      "current_parallel_A": -1206.7169520564876,
+      "temperature_eV": 23.29078045414194,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 130,
+      "time_s": 1.2999999999999941e-06,
+      "current_parallel_A": -1212.3737640567463,
+      "temperature_eV": 23.302405188171257,
+      "particle_balance_relative": 1.6000000000000068e-16
+    },
+    {
+      "step": 131,
+      "time_s": 1.3099999999999942e-06,
+      "current_parallel_A": -1218.0035495791985,
+      "temperature_eV": 23.313930028339847,
+      "particle_balance_relative": -1.6000000000000063e-16
+    },
+    {
+      "step": 132,
+      "time_s": 1.3199999999999941e-06,
+      "current_parallel_A": -1223.6065668593951,
+      "temperature_eV": 23.325356050874525,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 133,
+      "time_s": 1.329999999999994e-06,
+      "current_parallel_A": -1229.1830699429252,
+      "temperature_eV": 23.336684315377177,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 134,
+      "time_s": 1.339999999999994e-06,
+      "current_parallel_A": -1234.733308781894,
+      "temperature_eV": 23.347915865188522,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 135,
+      "time_s": 1.349999999999994e-06,
+      "current_parallel_A": -1240.2575293285672,
+      "temperature_eV": 23.3590517277413,
+      "particle_balance_relative": -1.6000000000000068e-16
+    },
+    {
+      "step": 136,
+      "time_s": 1.359999999999994e-06,
+      "current_parallel_A": -1245.7559736262704,
+      "temperature_eV": 23.370092914903545,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 137,
+      "time_s": 1.3699999999999939e-06,
+      "current_parallel_A": -1251.228879897664,
+      "temperature_eV": 23.38104042331209,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 138,
+      "time_s": 1.3799999999999938e-06,
+      "current_parallel_A": -1256.6764826304482,
+      "temperature_eV": 23.391895234696854,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 139,
+      "time_s": 1.3899999999999939e-06,
+      "current_parallel_A": -1262.0990126606314,
+      "temperature_eV": 23.40265831619594,
+      "particle_balance_relative": -1.600000000000007e-16
+    },
+    {
+      "step": 140,
+      "time_s": 1.3999999999999938e-06,
+      "current_parallel_A": -1267.4966972534041,
+      "temperature_eV": 23.41333062066215,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 141,
+      "time_s": 1.4099999999999937e-06,
+      "current_parallel_A": -1272.869760181736,
+      "temperature_eV": 23.423913086961047,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 142,
+      "time_s": 1.4199999999999936e-06,
+      "current_parallel_A": -1278.2184218027462,
+      "temperature_eV": 23.434406640260786,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 143,
+      "time_s": 1.4299999999999937e-06,
+      "current_parallel_A": -1283.5428991319454,
+      "temperature_eV": 23.444812192314206,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 144,
+      "time_s": 1.4399999999999936e-06,
+      "current_parallel_A": -1288.8434059154001,
+      "temperature_eV": 23.45513064173322,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 145,
+      "time_s": 1.4499999999999935e-06,
+      "current_parallel_A": -1294.1201526999046,
+      "temperature_eV": 23.46536287425587,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 146,
+      "time_s": 1.4599999999999934e-06,
+      "current_parallel_A": -1299.3733469012254,
+      "temperature_eV": 23.47550976300629,
+      "particle_balance_relative": -1.6000000000000073e-16
+    },
+    {
+      "step": 147,
+      "time_s": 1.4699999999999935e-06,
+      "current_parallel_A": -1304.6031928704706,
+      "temperature_eV": 23.48557216874774,
+      "particle_balance_relative": -1.6000000000000075e-16
+    },
+    {
+      "step": 148,
+      "time_s": 1.4799999999999935e-06,
+      "current_parallel_A": -1309.809891958661,
+      "temperature_eV": 23.49555094012904,
+      "particle_balance_relative": 1.6000000000000078e-16
+    },
+    {
+      "step": 149,
+      "time_s": 1.4899999999999934e-06,
+      "current_parallel_A": -1314.9936425795509,
+      "temperature_eV": 23.50544691392448,
+      "particle_balance_relative": -1.6000000000000075e-16
+    },
+    {
+      "step": 150,
+      "time_s": 1.4999999999999933e-06,
+      "current_parallel_A": -1320.1546402707595,
+      "temperature_eV": 23.51526091526755,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 151,
+      "time_s": 1.5099999999999934e-06,
+      "current_parallel_A": -1325.293077753272,
+      "temperature_eV": 23.52499375787862,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 152,
+      "time_s": 1.5199999999999933e-06,
+      "current_parallel_A": -1330.4091449893563,
+      "temperature_eV": 23.534646244286705,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 153,
+      "time_s": 1.5299999999999932e-06,
+      "current_parallel_A": -1335.5030292389476,
+      "temperature_eV": 23.544219166045686,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 154,
+      "time_s": 1.539999999999993e-06,
+      "current_parallel_A": -1340.5749151145546,
+      "temperature_eV": 23.553713303944907,
+      "particle_balance_relative": -1.6000000000000078e-16
+    },
+    {
+      "step": 155,
+      "time_s": 1.5499999999999932e-06,
+      "current_parallel_A": -1345.6249846347291,
+      "temperature_eV": 23.563129428214555,
+      "particle_balance_relative": -1.600000000000008e-16
+    },
+    {
+      "step": 156,
+      "time_s": 1.5599999999999931e-06,
+      "current_parallel_A": -1350.6534172761412,
+      "temperature_eV": 23.572468298725838,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 157,
+      "time_s": 1.569999999999993e-06,
+      "current_parallel_A": -1355.6603900243201,
+      "temperature_eV": 23.581730665186186,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 158,
+      "time_s": 1.579999999999993e-06,
+      "current_parallel_A": -1360.646077423079,
+      "temperature_eV": 23.590917267329594,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 159,
+      "time_s": 1.589999999999993e-06,
+      "current_parallel_A": -1365.610651622681,
+      "temperature_eV": 23.600028835102318,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 160,
+      "time_s": 1.599999999999993e-06,
+      "current_parallel_A": -1370.5542824267852,
+      "temperature_eV": 23.60906608884392,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 161,
+      "time_s": 1.6099999999999928e-06,
+      "current_parallel_A": -1375.4771373381989,
+      "temperature_eV": 23.618029739464017,
+      "particle_balance_relative": -1.6000000000000082e-16
+    },
+    {
+      "step": 162,
+      "time_s": 1.6199999999999927e-06,
+      "current_parallel_A": -1380.379381603482,
+      "temperature_eV": 23.626920488614676,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 163,
+      "time_s": 1.6299999999999927e-06,
+      "current_parallel_A": -1385.26117825644,
+      "temperature_eV": 23.63573902885866,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 164,
+      "time_s": 1.6399999999999928e-06,
+      "current_parallel_A": -1390.1226881605269,
+      "temperature_eV": 23.64448604383366,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 165,
+      "time_s": 1.6499999999999927e-06,
+      "current_parallel_A": -1394.9640700502066,
+      "temperature_eV": 23.653162208412642,
+      "particle_balance_relative": -1.6000000000000085e-16
+    },
+    {
+      "step": 166,
+      "time_s": 1.6599999999999926e-06,
+      "current_parallel_A": -1399.7854805712923,
+      "temperature_eV": 23.661768188860297,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 167,
+      "time_s": 1.6699999999999925e-06,
+      "current_parallel_A": -1404.587074320305,
+      "temperature_eV": 23.670304642985915,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 168,
+      "time_s": 1.6799999999999926e-06,
+      "current_parallel_A": -1409.3690038828602,
+      "temperature_eV": 23.678772220292643,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 169,
+      "time_s": 1.6899999999999925e-06,
+      "current_parallel_A": -1414.1314198711405,
+      "temperature_eV": 23.687171562123222,
+      "particle_balance_relative": -3.2000000000000175e-16
+    },
+    {
+      "step": 170,
+      "time_s": 1.6999999999999924e-06,
+      "current_parallel_A": -1418.8744709604553,
+      "temperature_eV": 23.6955033018024,
+      "particle_balance_relative": 3.2000000000000185e-16
+    },
+    {
+      "step": 171,
+      "time_s": 1.7099999999999923e-06,
+      "current_parallel_A": -1423.5983039249297,
+      "temperature_eV": 23.703768064776067,
+      "particle_balance_relative": -1.6000000000000087e-16
+    },
+    {
+      "step": 172,
+      "time_s": 1.7199999999999924e-06,
+      "current_parallel_A": -1428.3030636723413,
+      "temperature_eV": 23.711966468747153,
+      "particle_balance_relative": -1.600000000000009e-16
+    },
+    {
+      "step": 173,
+      "time_s": 1.7299999999999923e-06,
+      "current_parallel_A": -1432.9888932781237,
+      "temperature_eV": 23.72009912380847,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 174,
+      "time_s": 1.7399999999999922e-06,
+      "current_parallel_A": -1437.655934018584,
+      "temperature_eV": 23.72816663257255,
+      "particle_balance_relative": 1.6000000000000092e-16
+    },
+    {
+      "step": 175,
+      "time_s": 1.7499999999999921e-06,
+      "current_parallel_A": -1442.3043254033262,
+      "temperature_eV": 23.736169590298537,
+      "particle_balance_relative": -1.600000000000009e-16
+    },
+    {
+      "step": 176,
+      "time_s": 1.7599999999999923e-06,
+      "current_parallel_A": -1446.9342052069185,
+      "temperature_eV": 23.744108585016225,
+      "particle_balance_relative": -1.6000000000000092e-16
+    },
+    {
+      "step": 177,
+      "time_s": 1.7699999999999922e-06,
+      "current_parallel_A": -1451.5457094998358,
+      "temperature_eV": 23.75198419764733,
+      "particle_balance_relative": 1.6000000000000095e-16
+    },
+    {
+      "step": 178,
+      "time_s": 1.779999999999992e-06,
+      "current_parallel_A": -1456.1389726786763,
+      "temperature_eV": 23.75979700212419,
+      "particle_balance_relative": -1.6000000000000092e-16
+    },
+    {
+      "step": 179,
+      "time_s": 1.789999999999992e-06,
+      "current_parallel_A": -1460.7141274956907,
+      "temperature_eV": 23.76754756550561,
+      "particle_balance_relative": 1.6000000000000095e-16
+    },
+    {
+      "step": 180,
+      "time_s": 1.799999999999992e-06,
+      "current_parallel_A": -1465.2713050876232,
+      "temperature_eV": 23.775236448090425,
+      "particle_balance_relative": -1.6000000000000092e-16
+    },
+    {
+      "step": 181,
+      "time_s": 1.809999999999992e-06,
+      "current_parallel_A": -1469.8106350039172,
+      "temperature_eV": 23.78286420352836,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 182,
+      "time_s": 1.8199999999999919e-06,
+      "current_parallel_A": -1474.3322452342613,
+      "temperature_eV": 23.790431378928673,
+      "particle_balance_relative": -1.6000000000000095e-16
+    },
+    {
+      "step": 183,
+      "time_s": 1.8299999999999918e-06,
+      "current_parallel_A": -1478.8362622355282,
+      "temperature_eV": 23.79793851496636,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 184,
+      "time_s": 1.839999999999992e-06,
+      "current_parallel_A": -1483.3228109581007,
+      "temperature_eV": 23.805386145986027,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 185,
+      "time_s": 1.8499999999999918e-06,
+      "current_parallel_A": -1487.7920148716184,
+      "temperature_eV": 23.81277480010367,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 186,
+      "time_s": 1.8599999999999917e-06,
+      "current_parallel_A": -1492.2439959901467,
+      "temperature_eV": 23.820104999306217,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 187,
+      "time_s": 1.8699999999999916e-06,
+      "current_parallel_A": -1496.6788748967915,
+      "temperature_eV": 23.82737725954897,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 188,
+      "time_s": 1.8799999999999917e-06,
+      "current_parallel_A": -1501.096770767775,
+      "temperature_eV": 23.834592090851007,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 189,
+      "time_s": 1.8899999999999916e-06,
+      "current_parallel_A": -1505.4978013959822,
+      "temperature_eV": 23.841749997388597,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 190,
+      "time_s": 1.8999999999999915e-06,
+      "current_parallel_A": -1509.882083213994,
+      "temperature_eV": 23.848851477586656,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 191,
+      "time_s": 1.9099999999999915e-06,
+      "current_parallel_A": -1514.2497313166277,
+      "temperature_eV": 23.855897024208325,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 192,
+      "time_s": 1.9199999999999914e-06,
+      "current_parallel_A": -1518.6008594829852,
+      "temperature_eV": 23.862887124442697,
+      "particle_balance_relative": -3.2000000000000195e-16
+    },
+    {
+      "step": 193,
+      "time_s": 1.9299999999999913e-06,
+      "current_parallel_A": -1522.9355801980244,
+      "temperature_eV": 23.869822259990727,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 194,
+      "time_s": 1.939999999999991e-06,
+      "current_parallel_A": -1527.2540046736844,
+      "temperature_eV": 23.87670290714944,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 195,
+      "time_s": 1.9499999999999915e-06,
+      "current_parallel_A": -1531.556242869553,
+      "temperature_eV": 23.88352953689439,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 196,
+      "time_s": 1.9599999999999914e-06,
+      "current_parallel_A": -1535.8424035130856,
+      "temperature_eV": 23.89030261496047,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 197,
+      "time_s": 1.9699999999999913e-06,
+      "current_parallel_A": -1540.1125941194252,
+      "temperature_eV": 23.89702260192107,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 198,
+      "time_s": 1.979999999999991e-06,
+      "current_parallel_A": -1544.3669210107885,
+      "temperature_eV": 23.90368995326573,
+      "particle_balance_relative": -1.6000000000000102e-16
+    },
+    {
+      "step": 199,
+      "time_s": 1.989999999999991e-06,
+      "current_parallel_A": -1548.6054893354424,
+      "temperature_eV": 23.910305119476153,
+      "particle_balance_relative": 0.0
+    },
+    {
+      "step": 200,
+      "time_s": 1.999999999999991e-06,
+      "current_parallel_A": -1552.8284030863101,
+      "temperature_eV": 23.916868546100787,
+      "particle_balance_relative": -1.6000000000000105e-16
+    }
+  ],
+  "current_definition": "J_parallel = q_e * integral(v_parallel*f_e*d3v)",
+  "equilibrium_model": "none; no GS/EFIT or closed-flux-surface coordinate",
+  "scope": "reduced 0D-2V model with optional relativistic momentum coordinates, PSD off-diagonal D_ql, linearized momentum-conserving field-particle closure and pre-CFS mirror bounce surrogate; no radial guiding-centre orbit or nonlinear Rosenbluth operator",
+  "quantitative_current_warning": "A physical EC/EBW-driven current requires a power-normalized D_ql from a validated ray/full-wave solver and spatial magnetic projection. Synthetic Gaussian diffusion is a sensitivity test only.",
+  "kinetic_switch_enabled": true,
+  "explicit_command_runs_when_disabled": true,
+  "distribution_output": null
+}

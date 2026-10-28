@@ -6,6 +6,7 @@ recursive-include configs *.ini *.json *.yaml *.csv *.md
 recursive-include data *.csv *.dat *.nc *.txt *.json
 exclude data/openadas/adf11_h_96/*.dat
 recursive-include docs *.md *.bib
+recursive-include examples *.md *.json
 recursive-include tools *.py
 prune data/genray_reference
 prune runs
