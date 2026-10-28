@@ -66,6 +66,9 @@ The solver successfully reached the end of the integration interval.
 完整命令、输入配置链接、结果解释和可信度限制。参考结果用于软件回归和接口理解，
 不能替代炮级输入、实验验证或定量模式转换证据。
 
+[`examples/reports/`](examples/reports/) 另提供四份经过逐页渲染与可信度筛选的PDF报告，
+并以manifest记录页数、SHA-256、证据等级及每份报告不能支持的结论。
+
 ## 第一次看结果
 
 `runs/quickstart/` 中最重要的文件是：

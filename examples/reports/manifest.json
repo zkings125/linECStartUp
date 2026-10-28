@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-10-28",
+  "selection_status": "mechanism_and_sensitivity_reports_only",
+  "quantitative_device_prediction": false,
+  "reports": [
+    {
+      "file": "exl50u_advanced_kinetics_report.pdf",
+      "pages": 5,
+      "bytes": 1079105,
+      "sha256": "a8a7ed1168ecd4ae0f87a3aed520cffbcbe225c2e902626544ad30c26ef0fc2e",
+      "generator": "tools/build_advanced_kinetics_report.py",
+      "evidence_level": "mechanism_and_sensitivity",
+      "does_not_establish": "shot-level EXL-50U startup current prediction"
+    },
+    {
+      "file": "jtext_representative_startup_report.pdf",
+      "pages": 4,
+      "bytes": 678089,
+      "sha256": "e0d892c85d42f73ced8f7df5e8153c1805689303ddf0c7a3f0b9d6969284adbe",
+      "generator": "tools/build_jtext_high_fidelity_report.py",
+      "evidence_level": "representative_failure_hypothesis",
+      "does_not_establish": "a universal J-TEXT EC startup threshold or quantitative ECCD/EBWCD"
+    },
+    {
+      "file": "cross_device_ec_startup_report.pdf",
+      "pages": 8,
+      "bytes": 1218776,
+      "sha256": "2b8bdc6e9d6a54db4fb3cfd7faa3f1b89ed50e6e4a8951fcc64c3589ab3ef3dc",
+      "generator": "tools/build_cross_device_startup_report.py",
+      "evidence_level": "cross_device_mechanism_comparison",
+      "does_not_establish": "validated current predictions across devices"
+    },
+    {
+      "file": "mast_ebw_anchor_calibration_report.pdf",
+      "pages": 5,
+      "bytes": 557062,
+      "sha256": "53f63293ace1b10f1af295fc22e5fe4752d306275a33346a1fa5c0e228c48b12",
+      "generator": "tools/calibrate_mast_ebw_anchor.py",
+      "evidence_level": "literature_anchor_sufficiency_test",
+      "does_not_establish": "measured O-X-B conversion, EBW spectrum, or MAST VFC waveform"
+    }
+  ]
+}
