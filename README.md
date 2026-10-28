@@ -222,7 +222,7 @@ python -m ruff check ecstartup tests tools
 python -m build
 ```
 
-GitHub Actions会在Python 3.9和3.12上执行安装、最小配置校验、冒烟运行和测试，
+GitHub Actions会在Python 3.10和3.12上执行安装、最小配置校验、冒烟运行和测试，
 并单独构建wheel与源码包。贡献代码前请阅读
 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
 

@@ -23,6 +23,7 @@ from scipy.interpolate import RegularGridInterpolator
 from scipy.special import jv
 
 from ..constants import E_CHARGE_C, M_E_KG, PI
+from ..numerics import trapezoid
 from .fokker_planck import C_LIGHT_M_S, RelativisticMomentumGrid, VelocityGrid
 from .spatial_fokker_planck import OpenFieldLineGrid, SpatialQuasilinearDiffusion
 
@@ -131,7 +132,7 @@ class FullWaveFieldMap2D:
 
     def axisymmetric_absorbed_power_W(self) -> float:
         integrand = 2.0 * PI * self.R_m[:, None] * self.absorbed_power_density_W_m3
-        return float(np.trapz(np.trapz(integrand, self.Z_m, axis=1), self.R_m))
+        return float(trapezoid(trapezoid(integrand, self.Z_m, axis=1), self.R_m))
 
     @property
     def local_absorption_balance_relative(self) -> float:

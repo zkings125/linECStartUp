@@ -11,6 +11,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
 
+from ..numerics import trapezoid
+
 
 @dataclass(frozen=True)
 class OrbitClassification:
@@ -91,10 +93,10 @@ def bounce_average(
     if trapped and np.any(v == 0.0):
         v = np.where(np.abs(v) < 1.0e-6, np.sign(v) * 1.0e-6 + (v == 0.0) * 1.0e-6, v)
     residence = 1.0 / np.maximum(np.abs(v), 1.0e-6)
-    denominator = float(np.trapz(residence, s))
+    denominator = float(trapezoid(residence, s))
     if denominator <= 0.0:
         raise ValueError("orbit residence integral is non-positive")
-    return float(np.trapz(A * residence, s) / denominator)
+    return float(trapezoid(A * residence, s) / denominator)
 
 
 def apply_bounce_weight_to_diffusion(diffusion, classification: OrbitClassification):

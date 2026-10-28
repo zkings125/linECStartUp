@@ -9,6 +9,7 @@ from ecstartup.current_profile import (
     reconstruct_current_profiles,
     reconstruct_mechanism_currents,
 )
+from ecstartup.numerics import trapezoid
 from ecstartup.solver import integrate
 
 
@@ -37,7 +38,7 @@ def test_beta_profile_integrates_to_one() -> None:
     radius = 0.25
     for shape in ((0.0, 1.5), (0.5, 3.0), (4.0, 0.5)):
         profile = normalized_beta_profile(rho, radius, shape)
-        integral = np.trapz(profile * 2.0 * np.pi * radius**2 * rho, rho)
+        integral = trapezoid(profile * 2.0 * np.pi * radius**2 * rho, rho)
         assert integral == pytest.approx(1.0, rel=2.0e-5)
 
 
@@ -46,7 +47,7 @@ def test_profile_integrates_to_actual_ip() -> None:
     result = integrate(config)
     profiles = reconstruct_current_profiles(result, config)
     radius = config.geometry.minor_radius_m
-    recovered = np.trapz(
+    recovered = trapezoid(
         profiles.j_total_A_m2 * 2.0 * np.pi * radius**2 * profiles.rho_geo,
         profiles.rho_geo,
         axis=1,

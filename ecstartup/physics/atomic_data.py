@@ -20,6 +20,7 @@ import numpy as np
 
 from ..constants import E_CHARGE_C, M_E_KG
 from ..config import GasConfig
+from ..numerics import trapezoid
 from .rates import CollisionRateModel, RateCoefficients
 
 
@@ -69,7 +70,7 @@ class CrossSectionTable:
             * np.exp(-energy / temperature)
         )
         speed = np.sqrt(2.0 * E_CHARGE_C * energy / M_E_KG)
-        return float(np.trapz(self.cross_section_m2 * speed * probability_per_eV, energy))
+        return float(trapezoid(self.cross_section_m2 * speed * probability_per_eV, energy))
 
     def eedf_rate_m3_s(self, grid, distribution: np.ndarray) -> float:
         values = np.asarray(distribution, dtype=float)
